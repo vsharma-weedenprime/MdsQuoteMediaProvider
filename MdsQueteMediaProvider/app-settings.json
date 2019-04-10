@@ -1,0 +1,19 @@
+﻿{
+  "MdsProviderDealerConfig": {
+    "ConnectionPort": "5570",
+    "TransportProtocol": "tcp",
+    "RouterAddress": "10.21.104.204"
+  },
+  "MdsProviderDiagnosticsConfig": {
+    "HeartbeatCheckDurationInMilliseconds": "10000",
+    "DeadCondition": [
+      {
+        "ObjectName": "UnstableSource.InboundMessage", // object name
+        "HeartbeatCheckElapseCount": "30" // number of times diagnostics will do a heartbeat check before declaring the object dead
+      }
+    ]
+  },
+  "TestServiceConfig": {
+    "MessageFromConfig" :  "This message is picked up from the config file."
+  }
+}
